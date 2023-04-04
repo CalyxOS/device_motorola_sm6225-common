@@ -161,7 +161,6 @@ include hardware/motorola/sepolicy/qti/SEPolicy.mk
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
-BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 
 # WiFi
 BOARD_WLAN_DEVICE := qcwcn
