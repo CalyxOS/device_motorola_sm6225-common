@@ -106,6 +106,8 @@ if [ -z "${ONLY_COMMON}" ] && [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt
     extract "${MY_DIR}/../${DEVICE}/proprietary-files-carriersettings.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 
     extract_carriersettings
+
+    extract_firmware "${MY_DIR}/../${DEVICE}/proprietary-firmware.txt" "${SRC}" "${VENDOR}"
 fi
 
 "${MY_DIR}/setup-makefiles.sh"
