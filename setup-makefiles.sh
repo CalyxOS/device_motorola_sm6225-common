@@ -47,6 +47,8 @@ if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
     write_single_product_copy_files "product/etc/apns-conf.xml"
     write_single_product_packages "CarrierConfigOverlay"
 
+    append_firmware_calls_to_makefiles "${MY_DIR}/../${DEVICE}/proprietary-firmware.txt"
+
     # Finish
     write_footers
 fi
