@@ -221,7 +221,7 @@ ro.telephony.iwlan_operation_mode=legacy
 telephony.lteOnCdmaDevice=1
 
 # Security patch
-ro.vendor.kernel.security_patch=2023-10-05
+ro.vendor.kernel.security_patch=2023-11-05
 
 # Sensors
 persist.vendor.sensors.enable.bypass_worker=true
