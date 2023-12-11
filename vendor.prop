@@ -213,7 +213,7 @@ ro.telephony.default_network=10,10
 telephony.lteOnCdmaDevice=1
 
 # Security patch
-ro.vendor.kernel.security_patch=2023-11-05
+ro.vendor.kernel.security_patch=2023-12-05
 
 # Sensors
 persist.vendor.sensors.enable.bypass_worker=true
