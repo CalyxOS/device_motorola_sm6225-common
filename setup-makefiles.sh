@@ -30,6 +30,10 @@ write_headers "borneo capri caprip cebu guam guamna guamp devon hawao rhode"
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
 
+printf '%s\n' "\$(call add-radio-file,factory/devinfo.img)" >> "${ANDROIDMK}"
+printf '%s\n' "\$(call add-radio-file,factory/frp.img)" >> "${ANDROIDMK}"
+printf '\n' >> "${ANDROIDMK}"
+
 # Finish
 write_footers
 
@@ -50,6 +54,9 @@ if [ -s "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files.txt" ]; then
     if [ -f "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-firmware.txt" ]; then
         append_firmware_calls_to_makefiles "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-firmware.txt"
     fi
+
+    printf '%s\n' "\$(call add-radio-file,factory/partition.img)" >> "${ANDROIDMK}"
+    printf '\n' >> "${ANDROIDMK}"
 
     # Finish
     write_footers
