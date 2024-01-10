@@ -33,6 +33,24 @@
       "message": "Likely related to https://gitlab.com/CalyxOS/calyxos/-/issues/1972",
       "revId": "85bf006fad27e92c7a238aa3aff5bc625c317782",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "77f931d1_74ddd3e0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2024-01-10T19:27:57Z",
+      "side": 1,
+      "message": "Yes, looks like it!",
+      "parentUuid": "c94e87b4_2b078079",
+      "revId": "85bf006fad27e92c7a238aa3aff5bc625c317782",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
