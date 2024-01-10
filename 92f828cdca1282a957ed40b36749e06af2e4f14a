@@ -34,6 +34,23 @@
       "parentUuid": "a8714b6b_c914b1f3",
       "revId": "92f828cdca1282a957ed40b36749e06af2e4f14a",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "620417fa_e979c3b4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2024-01-10T18:53:26Z",
+      "side": 1,
+      "message": "Can it be set in vendor.prop?",
+      "revId": "92f828cdca1282a957ed40b36749e06af2e4f14a",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
