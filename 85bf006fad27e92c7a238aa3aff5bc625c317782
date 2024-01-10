@@ -16,6 +16,23 @@
       "message": "From a second look it looks like this is needed to fix USB restriction in general, since the HAL uses the wrong path at the moment? This should be sent upstream",
       "revId": "85bf006fad27e92c7a238aa3aff5bc625c317782",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c94e87b4_2b078079",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2024-01-10T19:26:54Z",
+      "side": 1,
+      "message": "Likely related to https://gitlab.com/CalyxOS/calyxos/-/issues/1972",
+      "revId": "85bf006fad27e92c7a238aa3aff5bc625c317782",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
