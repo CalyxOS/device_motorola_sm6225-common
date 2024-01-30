@@ -33,6 +33,24 @@
       "message": "I don\u0027t know for sure if these parts in `compressed_offload` need to be changed or not. It was `direct_pcm` that I saw being used for playback of surround-sound audio in `dumpsys media.audio_policy` and logs, when this problem occurs.",
       "revId": "536ad13a9011ee85db517e6c4a9ca8e122093117",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f0994e74_d8863e7b",
+        "filename": "audio/audio_policy_configuration_vendor.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2024-01-30T22:41:12Z",
+      "side": 1,
+      "message": "In other words, this change might be broader than it needs to be, but I did compare with other audio policy XMLs in device/, and I didn\u0027t see any (even for newer devices like gs201, zuma) that included these many-channel layouts in the channel masks, except somewhere for a USB surround sound device (seemingly input, weirdly, if I read it right).",
+      "parentUuid": "b5da26cd_97fac770",
+      "revId": "536ad13a9011ee85db517e6c4a9ca8e122093117",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
