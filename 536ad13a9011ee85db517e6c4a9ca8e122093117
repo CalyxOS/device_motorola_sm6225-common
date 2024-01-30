@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d42b3753_648cf847",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2024-01-30T22:35:01Z",
+      "side": 1,
+      "message": "Fairphone 4 looks like it may be affected too, but I can\u0027t test it.\n\nI can send this upstream if it looks okay.",
+      "revId": "536ad13a9011ee85db517e6c4a9ca8e122093117",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
