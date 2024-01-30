@@ -16,6 +16,23 @@
       "message": "Fairphone 4 looks like it may be affected too, but I can\u0027t test it.\n\nI can send this upstream if it looks okay.",
       "revId": "536ad13a9011ee85db517e6c4a9ca8e122093117",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b5da26cd_97fac770",
+        "filename": "audio/audio_policy_configuration_vendor.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2024-01-30T22:38:11Z",
+      "side": 1,
+      "message": "I don\u0027t know for sure if these parts in `compressed_offload` need to be changed or not. It was `direct_pcm` that I saw being used for playback of surround-sound audio in `dumpsys media.audio_policy` and logs, when this problem occurs.",
+      "revId": "536ad13a9011ee85db517e6c4a9ca8e122093117",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
