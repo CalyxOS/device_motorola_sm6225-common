@@ -87,7 +87,7 @@ function blob_fixup() {
 
 function prepare_firmware() {
     if [ "${SRC}" != "adb" ]; then
-        local STAR="${ANDROID_ROOT}"/lineage/scripts/motorola/star.sh
+        local STAR="${ANDROID_ROOT}"/calyx/scripts/motorola/star.sh
         for IMAGE in bootloader radio; do
             if [ -f "${SRC}/${IMAGE}.img" ]; then
                 echo "Extracting Motorola star image ${SRC}/${IMAGE}.img"
