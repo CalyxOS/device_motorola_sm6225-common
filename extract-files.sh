@@ -132,6 +132,10 @@ if [ -z "${ONLY_COMMON}" ] && [ -s "${MY_DIR}/../../${VENDOR}/${DEVICE}/propriet
     if [ -f "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-firmware.txt" ]; then
         extract_firmware "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-firmware.txt" "${SRC}"
     fi
+
+    if [ -f "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-firmware-factory.txt" ]; then
+        extract_factory "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-firmware-factory.txt" "${SRC}"
+    fi
 fi
 
 "${MY_DIR}/setup-makefiles.sh"
