@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "de63e38b_69135a9f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2024-03-21T17:27:30Z",
+      "side": 1,
+      "message": "Still verifying this, and on its own, it doesn\u0027t solve another aspect of calyxos#2154 (the notification remaining when Deny USB is turned on). I\u0027d like to have a fix for that too if possible.",
+      "revId": "9e86c1350d2a3a26f449209bf13d3472e33247f0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
