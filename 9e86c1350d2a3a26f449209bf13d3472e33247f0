@@ -16,6 +16,24 @@
       "message": "Still verifying this, and on its own, it doesn\u0027t solve another aspect of calyxos#2154 (the notification remaining when Deny USB is turned on). I\u0027d like to have a fix for that too if possible.",
       "revId": "9e86c1350d2a3a26f449209bf13d3472e33247f0",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d54b1e4f_1c0f6d23",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2024-03-21T21:03:51Z",
+      "side": 1,
+      "message": "It works fine. The other fix is here: https://review.calyxos.org/c/CalyxOS/platform_frameworks_base/+/25489",
+      "parentUuid": "de63e38b_69135a9f",
+      "revId": "9e86c1350d2a3a26f449209bf13d3472e33247f0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
