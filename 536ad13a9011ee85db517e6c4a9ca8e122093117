@@ -51,6 +51,24 @@
       "parentUuid": "b5da26cd_97fac770",
       "revId": "536ad13a9011ee85db517e6c4a9ca8e122093117",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3545c175_52442e90",
+        "filename": "audio/audio_policy_configuration_vendor.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-03-28T14:55:27Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "f0994e74_d8863e7b",
+      "revId": "536ad13a9011ee85db517e6c4a9ca8e122093117",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ],
   "submitRequirementResults": [
