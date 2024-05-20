@@ -51,8 +51,9 @@ if [ -s "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files.txt" ]; then
         append_firmware_calls_to_makefiles "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-firmware.txt"
     fi
 
-    printf '%s\n' "\$(call add-radio-file,factory/partition.img)" >> "${ANDROIDMK}"
-    printf '\n' >> "${ANDROIDMK}"
+    if [ -f "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-firmware-factory.txt" ]; then
+        append_factory_calls_to_makefiles "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-firmware-factory.txt"
+    fi
 
     # Finish
     write_footers
