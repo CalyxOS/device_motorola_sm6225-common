@@ -42,6 +42,7 @@ if [ -s "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files.txt" ]; then
 
     # The standard device blobs
     write_makefiles "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files.txt" true
+    write_makefiles "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files-carriersettings.txt" true
 
     write_rro_package "CarrierConfigOverlay" "com.android.carrierconfig" product
     write_single_product_copy_files "product/etc/apns-conf.xml"
