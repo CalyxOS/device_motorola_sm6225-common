@@ -462,7 +462,7 @@ void BtLeDeviceScanDetailsDataItem::stringify(string& valueStr) {
         memset (t, '\0', 10);
         valueStr += BTLESCANDETAILS_FIELD_MAC;
         valueStr += ": ";
-        snprintf(t, 10, "[%02x:%02x:%02x:%02x:%02x:%02x]", d->mApSrnMacAddress[0],
+        snprintf(t, 50, "[%02x:%02x:%02x:%02x:%02x:%02x]", d->mApSrnMacAddress[0],
                 d->mApSrnMacAddress[1], d->mApSrnMacAddress[2], d->mApSrnMacAddress[3],
                 d->mApSrnMacAddress[4], d->mApSrnMacAddress[5]);
         valueStr += t;
@@ -511,7 +511,7 @@ void BtDeviceScanDetailsDataItem::stringify(string& valueStr) {
         memset (t, '\0', 10);
         valueStr += BTSCANDETAILS_FIELD_MAC;
         valueStr += ": ";
-        snprintf(t, 10, "[%02x:%02x:%02x:%02x:%02x:%02x]", d->mApSrnMacAddress[0],
+        snprintf(t, 50, "[%02x:%02x:%02x:%02x:%02x:%02x]", d->mApSrnMacAddress[0],
                 d->mApSrnMacAddress[1], d->mApSrnMacAddress[2], d->mApSrnMacAddress[3],
                 d->mApSrnMacAddress[4], d->mApSrnMacAddress[5]);
         valueStr += t;
