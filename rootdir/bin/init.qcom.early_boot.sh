@@ -376,6 +376,7 @@ case "$target" in
                 ;;
             518|561|586)
                 setprop vendor.media.target.version 3
+                setprop vendor.media.target_variant "_khaje"
                 ;;
             585)
                 setprop vendor.media.target.version 4
@@ -448,15 +449,6 @@ case "$target" in
            esac
            ;;
  esac
-
-baseband=`getprop ro.baseband`
-#enable atfwd daemon all targets except sda, apq, qcs
-case "$baseband" in
-    "apq" | "sda" | "qcs" )
-        setprop persist.vendor.radio.atfwd.start false;;
-    *)
-        setprop persist.vendor.radio.atfwd.start true;;
-esac
 
 #set default lcd density
 #Since lcd density has read only
