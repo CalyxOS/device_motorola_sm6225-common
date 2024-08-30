@@ -45,8 +45,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # ANT+
 PRODUCT_PACKAGES += \
-    AntHalService-Soong \
-    com.dsi.ant@1.0.vendor
+    AntHalService-Soong
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -106,13 +105,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
-# Bluetooth
-PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0.vendor \
-    vendor.qti.hardware.bluetooth_audio@2.1.vendor \
-    vendor.qti.hardware.btconfigstore@1.0.vendor \
-    vendor.qti.hardware.btconfigstore@2.0.vendor
-
 # Bootctrl
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-impl-qti \
@@ -124,14 +116,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64
 
-PRODUCT_PACKAGES += \
-    android.frameworks.sensorservice@1.0 \
-    android.frameworks.sensorservice@1.0.vendor \
-    vendor.qti.hardware.camera.postproc@1.0.vendor
-
-PRODUCT_PACKAGES += \
-    libgui_vendor
-
 # ConfigStore
 PRODUCT_PACKAGES += \
     disable_configstore
@@ -140,44 +124,23 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
     vendor.qti.hardware.display.allocator-service \
-    vendor.qti.hardware.display.composer-service
+    vendor.qti.hardware.display.composer-service \
+    vendor.qti.hardware.memtrack-service
 
 PRODUCT_PACKAGES += \
-    gralloc.bengal \
-    memtrack.bengal
+    gralloc.bengal
 
 PRODUCT_PACKAGES += \
-    init.qti.display_boot.sh \
-    libdisplayconfig.qti \
-    libdisplayconfig.system.qti \
-    libqdMetaData \
-    libqdMetaData.system \
-    libsdmcore \
-    libsdmutils
-
-PRODUCT_PACKAGES += \
-    vendor.display.config@1.11.vendor \
-    vendor.qti.hardware.display.mapper@1.1.vendor \
-    vendor.qti.hardware.display.mapper@2.0.vendor \
-    vendor.qti.hardware.display.mapper@3.0.vendor \
-    vendor.qti.hardware.display.mapper@4.0.vendor
+    init.qti.display_boot.sh
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.3.vendor \
     android.hardware.drm-service.clearkey
 
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
-
-# Fingerprint
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1.vendor \
-    com.motorola.hardware.biometric.fingerprint@1.0.vendor
 
 # FM
 PRODUCT_PACKAGES += \
@@ -186,14 +149,7 @@ PRODUCT_PACKAGES += \
 
 # Framework detect
 PRODUCT_PACKAGES += \
-    libqti_vndfwk_detect \
-    libqti_vndfwk_detect.vendor \
-    libvndfwk_detect_jni.qti \
-    libvndfwk_detect_jni.qti.vendor
-
-# Gatekeeper
-PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0.vendor
+    libvndfwk_detect_jni.qti.vendor # Needed by CNE app
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -218,19 +174,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti
 
-# HIDL
-PRODUCT_PACKAGES += \
-    libhidltransport.vendor \
-    libhwbinder.vendor
-
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
-
-# Keymaster
-PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.1.vendor
 
 # Lineage Health
 PRODUCT_PACKAGES += \
@@ -245,48 +192,18 @@ PRODUCT_PACKAGES += \
     libstagefrighthw \
     libc2dcolorconvert
 
-PRODUCT_PACKAGES += \
-    libavservices_minijail.vendor
-
 # Media - Configs
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     $(LOCAL_PATH)/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
-    $(LOCAL_PATH)/media/media_codecs_performance_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_v1.xml \
-    $(LOCAL_PATH)/media/media_codecs_performance_v2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_v2.xml \
-    $(LOCAL_PATH)/media/media_codecs_performance_v3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_v3.xml \
-    $(LOCAL_PATH)/media/media_codecs_performance_v4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_v4.xml \
-    $(LOCAL_PATH)/media/media_codecs_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor.xml \
-    $(LOCAL_PATH)/media/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml \
-    $(LOCAL_PATH)/media/media_codecs_vendor_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_v1.xml \
-    $(LOCAL_PATH)/media/media_codecs_vendor_v2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_v2.xml \
-    $(LOCAL_PATH)/media/media_codecs_vendor_v3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_v3.xml \
-    $(LOCAL_PATH)/media/media_codecs_vendor_v4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_v4.xml \
-    $(LOCAL_PATH)/media/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
-    $(LOCAL_PATH)/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_ODM)/etc/media_profiles_V1_0.xml \
-    $(LOCAL_PATH)/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
-    $(LOCAL_PATH)/media/media_profiles_khaje.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_khaje.xml \
-    $(LOCAL_PATH)/media/media_profiles_khaje_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_khaje_v0.xml \
-    $(LOCAL_PATH)/media/media_profiles_scuba.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_scuba.xml \
+    $(LOCAL_PATH)/media/media_codecs_performance_v3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_khaje.xml \
+    $(LOCAL_PATH)/media/media_codecs_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
+    $(LOCAL_PATH)/media/media_codecs_vendor_v3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_khaje.xml \
     $(LOCAL_PATH)/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml
-
-PRODUCT_COPY_FILES += \
-    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_audio.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_c2_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_video.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
 
 # MotoActions
 PRODUCT_PACKAGES += \
     MotoActions \
     MotoCommonOverlay
-
-# Net
-PRODUCT_PACKAGES += \
-    android.system.net.netd@1.1.vendor
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -302,10 +219,6 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
-
-# Perf
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.2.vendor
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -346,8 +259,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti \
-    android.hardware.power@1.2.vendor
+    android.hardware.power-service-qti
 
 # Public libraries
 PRODUCT_COPY_FILES += \
@@ -357,20 +269,6 @@ PRODUCT_COPY_FILES += \
 # RFS MSM MPSS symlinks
 PRODUCT_PACKAGES += \
     rfs_msm_mpss_readonly_vendor_fsg_symlink
-
-# RIL
-PRODUCT_PACKAGES += \
-    android.hardware.radio@1.5.vendor \
-    android.hardware.radio.config@1.2.vendor \
-    android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.secure_element@1.2.vendor \
-    libjson \
-    libprotobuf-cpp-full-3.9.1-vendorcompat \
-    libprotobuf-cpp-lite-3.9.1-vendorcompat \
-    librmnetctl \
-    libsqlite.vendor:64 \
-    libsysutils.vendor:64 \
-    libxml2
 
 # Rootdir
 PRODUCT_PACKAGES += \
@@ -396,12 +294,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.0-service.multihal \
-    libsensorndkbridge
-
-# Service Tracker
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.servicetracker@1.2.vendor
+    android.hardware.sensors@2.0-service.multihal
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
