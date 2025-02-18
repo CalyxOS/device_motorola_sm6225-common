@@ -1,5 +1,5 @@
 #
-# SPDX-FileCopyrightText: 2022-2024 The LineageOS Project
+# SPDX-FileCopyrightText: 2022-2025 The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -107,9 +107,9 @@ PRODUCT_COPY_FILES += \
 
 # Bootctrl
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.1-impl-qti \
-    android.hardware.boot@1.1-impl-qti.recovery \
-    android.hardware.boot@1.1-service
+    android.hardware.boot@1.2-impl-qti \
+    android.hardware.boot@1.2-impl-qti.recovery \
+    android.hardware.boot@1.2-service
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -143,8 +143,7 @@ PRODUCT_PACKAGES += \
 
 # FM
 PRODUCT_PACKAGES += \
-    FM2 \
-    qcom.fmradio
+    FM2
 
 # Framework detect
 PRODUCT_PACKAGES += \
@@ -298,7 +297,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.0-service.multihal
+    android.hardware.sensors-service.multihal
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
